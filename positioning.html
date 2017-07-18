@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      .static {
+        position: static;
+        height: 25vh;
+        width: 25vw;
+        background-color: purple;
+      }
+
+      /* Applies directional styling with respect to the flow of content.
+       * When we apply a style of `top: 10px` the browser performs the
+       * repaint relative to `<div class="static"></div>`.
+       */
+      .relative {
+        position: relative;
+        height: 25vh;
+        width: 25vw;
+        background-color: red;
+        top: 10px;
+        left: 30px;
+      }
+
+      /* Applies directional styling. The parent container is the first
+       * element with `position: relative`. Places element out of the
+       * document flow.
+       */
+      .absolute {
+        position: absolute;
+        height: 25%;
+        width: 25%;
+        background-color: white;
+        border: 1px solid black;
+        top: 20px;
+        left: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="static">
+    </div>
+
+    <div class="relative">
+      <div class="absolute">
+      </div>
+    </div>
+
+  </body>
+</html>
