@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .flexbox {
+        height: 100vh;
+        width: 100vw;
+        background-color: purple;
+        color: white;
+
+        /* FLEXBOX */
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+      }
+      .flex1 {
+        background-color: black;
+        flex-grow: 1;
+
+        /***************/
+        /* FLEX-BASIS */
+
+        /* Take up exactly the space alloted by flex-grow */
+         flex-basis: 0;
+
+        /* First consider content, then distribute space around the content */
+        /* flex-basis: auto; */
+
+        /* Start calculating width from 50% the width of the container, then
+         * distribute space around the content.
+         **/
+        /* flex-basis: 50%; */
+
+        /***************/
+        /* FLEX-SHRINK */
+
+        /* Do not shrink if parent container shrinks */
+        /* flex-shrink: 0; */
+
+        /* Shrink equally if parent container shrinks */
+        /* flex-shrink: 1; */
+      }
+      .flex2 {
+        background-color: blue;
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .flex3 {
+        background-color: red;
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .flex4 {
+        background-color: orange;
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="flexbox">
+      <div class="flex1">
+        Hello
+      </div>
+      <div class="flex2">
+        World
+      </div>
+      <div class="flex3">
+        How
+      </div>
+      <div class="flex4">
+        You go
+      </div>
+    </div>
+
+  </body>
+</html>
+
