@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
+
+  <!-- Flexbox container -->
   <body>
+     <!-- First potental flex item, but not flexing because position: fixed -->
     <header class="header">
   <nav>
     <ul class="header-nav nav-links">
@@ -24,9 +27,13 @@
 </header>
 
 
-    I'm a 3 col page!
+    <!-- 2nd flex item, the only one that will be changing in size -->
+    <div class="content-container">
+      I'm a 3 col page!
 
+    </div>
 
+    <!-- 3rd potential flex item, but not given a flex property -->
     <footer class="footer">
   <a class="footer-logo" href="/">
     <img src="/images/logo.png" alt="Learn Enough"/>
