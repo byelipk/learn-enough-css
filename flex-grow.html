@@ -20,7 +20,32 @@ layout: fall-through
       }
       .flex1 {
         background-color: black;
+
+        /***************/
+        /* FLEX-GROW */
+
+        /* Tell flex items to not expand */
         flex-grow: 1;
+
+        /* Flex items fill space */
+         /*flex-grow: 1;*/
+
+        /* Flex items fill space with a growth factor of 2 */
+         /*flex-grow: 2;*/
+
+        /***************/
+        /* FLEX-SHRINK */
+
+        /* Do not shrink if parent container shrinks */
+         /*flex-shrink: 0;*/
+
+        /* Shrink equally if parent container shrinks */
+         flex-shrink: 1;
+
+        /* Setting flex-shrink to a value N will cause the item to
+         * shrink by a factor of N.
+         */
+         /*flex-shrink: 2;*/
 
         /***************/
         /* FLEX-BASIS */
@@ -29,36 +54,27 @@ layout: fall-through
          flex-basis: 0;
 
         /* First consider content, then distribute space around the content */
-        /* flex-basis: auto; */
+         /*flex-basis: auto; */
 
-        /* Start calculating width from 50% the width of the container, then
-         * distribute space around the content.
-         **/
-        /* flex-basis: 50%; */
-
-        /***************/
-        /* FLEX-SHRINK */
-
-        /* Do not shrink if parent container shrinks */
-        /* flex-shrink: 0; */
-
-        /* Shrink equally if parent container shrinks */
-        /* flex-shrink: 1; */
+        /* Setting flex-basis to a value will make the item tak up at
+         * least that much space, and then the rest of the space is
+         * distributed by the value of flex-grow.
+         */
+         /*flex-basis: 50%; */
       }
       .flex2 {
         background-color: blue;
         flex-grow: 1;
+        flex-shrink: 1;
         flex-basis: 0;
       }
       .flex3 {
         background-color: red;
-        flex-grow: 1;
-        flex-basis: 0;
+        flex: 1 1 0;
       }
       .flex4 {
         background-color: orange;
-        flex-grow: 1;
-        flex-basis: 0;
+        flex: 1 1 0;
       }
     </style>
   </head>
