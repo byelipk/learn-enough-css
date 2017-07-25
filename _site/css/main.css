@@ -11,8 +11,6 @@ body {
   min-height: 100vh;
 }
 .content-container {
-  flex: 1 1 auto;
-  display: flex;
   padding-top: 10vh;
   width: 100%;
 }
@@ -56,6 +54,7 @@ h2 ~ p {
 .col-three .col-aside {
   flex: 0 1 20em;
 }
+
 /* HEADER STYLES */
 .header {
   background-color: #000;
