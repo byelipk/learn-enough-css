@@ -466,3 +466,23 @@ h2 ~ p {
 .post-footer p {
   font-size: 0.8em;
 }
+
+/* SCREEN 800px OR LESS */
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+  .header-logo {
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
+}
